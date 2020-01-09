@@ -1,0 +1,1 @@
+# htmlacademy-smart-device
