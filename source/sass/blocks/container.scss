@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+@media (max-width: $maxWidth) {
+  .container {
+    min-width: $tabletWidth;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .container {
+    min-width: $mobileWidth;
+    width: 100%;
+  }
+}

@@ -1,0 +1,187 @@
+.header {
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    padding: 0 13.255%;
+    z-index: 1;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  &__logo img {
+    margin-right: 15px;
+  }
+  &__logo div {
+    max-width: 300px;
+    max-height: 60px;
+    padding-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__logo p {
+    margin: 0 0 5px 0;
+    padding: 0;
+    max-height: 27px;
+    font-family: $font-title;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $color-text-white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__logo span {
+    display: inline-block;
+    vertical-align: center;
+    max-height: 14px;
+    font-family: $font-subtitle;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-text-subtitle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__contact,
+  &__contact ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__contact {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+    max-width: 1100px;
+    max-height: 32px;
+  }
+  &__contact ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 850px;
+    max-height: 20px;
+    list-style: none;
+  }
+  &__contact li {
+    max-width: 250px;
+    max-height: 24px;
+  }
+  &__contact li:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  &__contact a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $color-text-white;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  &__contact a svg {
+    margin-right: 20px;
+  }
+  &__contact ul ~ a {
+    max-width: 200px;
+    max-height: 16px;
+    margin-left: 4.13%;
+    padding: 15px 25px;
+    font-family: $font-title;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: $color-text-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid $color-text-white;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: $maxWidth) {
+  .header {
+    &__wrapper {
+      margin-top: 20px;
+      padding: 0 3.25%;
+    }
+    &__contact {
+      max-width: 500px;
+    }
+    &__contact ul {
+      max-height: 24px;
+    }
+    &__contact a svg {
+      margin-right: 0;
+    }
+    &__contact a[href^="mailto:"] svg {
+      width: 26px;
+      height: 19px;
+    }
+    &__contact a[href^="tel:"] svg {
+      width: 24px;
+      height: 24px;
+    }
+    &__contact a span {
+      display: none;
+    }
+    &__contact ul ~ a {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .header {
+    &__wrapper {
+      margin-top: 17px;
+      padding: 0 5%;
+    }
+    &__logo div {
+      display: none;
+    }
+    &__contact {
+      max-width: 200px;
+    }
+    &__contact li:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+}
