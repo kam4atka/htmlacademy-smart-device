@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/PTMono-curillic.woff2" as="font">
-  <link rel="preload" href="fonts/PTMono-latin.woff2" as="font">
-   <link rel="preload" href="fonts/Roboto-curillic.woff2" as="font">
-   <link rel="preload" href="fonts/Roboto-latin.woff2" as="font">
-   <link rel="preload" href="fonts/RobotoCondensedRegular-curillic.woff2" as="font">
-   <link rel="preload" href="fonts/RobotoCondensedRegular-latin.woff2" as="font">
-   <link rel="preload" href="fonts/RobotoCondensedBold-curillic.woff2" as="font">
-   <link rel="preload" href="fonts/RobotoCondensedBold-latin.woff2" as="font">
+  <link rel="preload" href="fonts/ptMono.woff2" as="font">
+  <link rel="preload" href="fonts/ptMono.woff" as="font">
+  <link rel="preload" href="fonts/roboto.woff2" as="font">
+  <link rel="preload" href="fonts/roboto.woff" as="font">
+  <link rel="preload" href="fonts/robotoCondensed.woff2" as="font">
+  <link rel="preload" href="fonts/robotoCondensed.woff" as="font">
+  <link rel="preload" href="fonts/robotoCondensedBold.woff2" as="font">
+  <link rel="preload" href="fonts/robotoCondensedBold.woff" as="font">
 </head>
 <body>
   <header class="header">
@@ -30,7 +30,7 @@
         <div class="header__contact">
           <ul>
             <li>
-              <a href="mailto:info@sd.ru" aria-label="Написать электронное письмо">
+              <a class="header__contact-mail" href="mailto:info@sd.ru" aria-label="Написать электронное письмо">
                 <svg width="19" height="14">
                   <use xlink:href="#icon-mail">
                 </svg>
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li>
-              <a href="tel:+74950005252" aria-label="Позвонить">
+              <a class="header__contact-phone" href="tel:+74950005252" aria-label="Позвонить">
                 <svg width="18" height="18">
                   <use xlink:href="#icon-phone">
                 </svg>
@@ -46,18 +46,11 @@
               </a>
             </li>
           </ul>
-          <a href="#">Заказать звонок</a>
+          <a class="header__contact-button" href="#">Заказать звонок</a>
         </div>
       </div>
     </div>
   </header>
-  <main class="main">
-    <div class="intro">
-      <div class="container">
-
-      </div>
-    </div>
-  </main>
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>

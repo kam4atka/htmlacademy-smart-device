@@ -1,8 +1,7 @@
 /* wrapper sizes */
 $mobileWidth: 320px;
 $tabletWidth: 767px;
-$desktopWidth: 1024px;
-$maxWidth: 1919px;
+$desktopWidth: 1023px;
 
 /* fonts */
 $font-primary: "PT Mono", "Georgia", serif;
@@ -10,9 +9,9 @@ $font-title: "Roboto Condensed", "Aria", sans-serif;
 $font-subtitle: "Roboto", "Aria", sans-serif;
 
 /* backgrounds */
-$color-bg-intro: #1B2931;
+$color-bg-dark: #1b2931;
 
 /* colors */
 $color-text-default: #666666;
 $color-text-subtitle: #788891;
-$color-text-white: #FFFFFF;
+$color-text-white: #ffffff;

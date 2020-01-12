@@ -1,10 +1,10 @@
 .container {
   position: relative;
-  max-width: $maxWidth;
+  max-width: 1446px;
   margin: 0 auto;
 }
 
-@media (max-width: $maxWidth) {
+@media (max-width: $desktopWidth) {
   .container {
     min-width: $tabletWidth;
   }
