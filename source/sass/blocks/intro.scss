@@ -1,4 +1,4 @@
-.intro__wrapper {
+.intro {
   padding: 0 1.2%;
 }
 
@@ -91,9 +91,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   &_tablet {
     display: block;
   }
+
   &_mobile {
     display: none;
   }
@@ -151,13 +153,14 @@
   .intro__link {
     max-width: 96%;
     margin: 0;
-    padding: 18px 42px;
+    padding: 18px 41px;
   }
 
   .intro__link-text {
     &_tablet {
       display: none;
     }
+
     &_mobile {
       display: block;
     }

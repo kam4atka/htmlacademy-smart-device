@@ -1,5 +1,8 @@
 .header {
-  background: $color-bg-dark;
+  background-color: $color-bg-dark;
+  background-image: url("../img/bg-header-card@1x.png"), url("../img/bg-header-triangle.svg"), url("../img/bg-header@1x.png");
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 85% 70%, 100% 100%, 0 0;
 }
 
 .header__wrapper {
@@ -163,6 +166,11 @@
 }
 
 @media (max-width: $desktopWidth) {
+  .header {
+    background-size: 450px, 1600px, cover;
+    background-position: 515px 35%, 50% -130px, 100% 100%;
+  }
+
   .header__wrapper {
     padding: 20px 3.25% 20px 3.25%;
     align-items: center;
@@ -221,6 +229,11 @@
 }
 
 @media (max-width: $tabletWidth) {
+  .header {
+    background-size: 300px, 1500px, cover;
+    background-position: 20px 20%, -650px -140px, 100% 100%;
+  }
+
   .header__wrapper {
     padding: 17px 5% 17px 5%;
   }
