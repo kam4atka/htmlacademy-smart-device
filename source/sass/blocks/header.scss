@@ -29,54 +29,43 @@
   &:active {
     opacity: 0.8;
   }
-}
 
-.header__logo img {
-  margin-right: 15px;
-}
+  svg {
+    margin-right: 15px;
+  }
 
-.header__logo div {
-  max-width: 300px;
-  max-height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  div {
+    max-width: 300px;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.header__logo p {
-  margin: 0 0 5px 0;
-  padding: 0;
-  max-height: 27px;
-  font-family: $font-title;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-  color: $color-text-white;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  p {
+    margin: 0 0 5px 0;
+    padding: 0;
+    max-height: 27px;
+    font-family: $font-title;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $color-text-white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.header__logo span {
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 14px;
-  font-family: $font-subtitle;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  color: $color-text-subtitle;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.header__contact,
-.header__contact ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 14px;
+    font-family: $font-subtitle;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: $color-text-subtitle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .header__contact {
@@ -84,20 +73,36 @@
   justify-content: flex-end;
   flex-grow: 1;
   max-width: 1100px;
-}
 
-.header__contact ul {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  list-style: none;
-}
+  &,
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.header__contact li {
-  max-width: 220px;
-}
+  ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+  }
 
-.header__contact li:not(:last-of-type) {
-  margin-right: 90px;
+  li {
+    max-width: 220px;
+  }
+
+  li:not(:last-of-type) {
+    margin-right: 90px;
+  }
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .header__contact-mail,
@@ -123,11 +128,10 @@
   &:active {
     opacity: 0.8;
   }
-}
 
-.header__contact-mail svg,
-.header__contact-phone svg {
-  margin-right: 20px;
+  svg {
+    margin-right: 20px;
+  }
 }
 
 .header__contact-button {
@@ -144,13 +148,18 @@
   text-transform: uppercase;
   border: 1px solid $color-text-white;
   border-radius: 5px;
+  outline: none;
   overflow: hidden;
   text-overflow: ellipsis;
-}
 
-.header__contact span {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $desktopWidth) {
@@ -159,42 +168,51 @@
     align-items: center;
   }
 
-  .header__logo div {
-    padding-top: 6px;
-  }
+  .header__logo {
+    div {
+      padding-top: 6px;
+    }
 
-  .header__logo p {
-    margin: 0;
+    p {
+      margin: 0;
+    }
   }
 
   .header__contact {
     max-width: 500px;
+
+    ul {
+      max-height: 24px;
+    }
+
+    li:not(:last-of-type) {
+      margin-right: 30px;
+    }
   }
 
-  .header__contact ul {
-    max-height: 24px;
+  .header__contact-mail,
+  .header__contact-phone {
+    svg {
+      margin-right: 0;
+    }
+
+    span {
+      display: none;
+    }
   }
 
-  .header__contact li:not(:last-of-type) {
-    margin-right: 30px;
+  .header__contact-mail {
+    svg {
+      width: 26px;
+      height: 19px;
+    }
   }
 
-  .header__contact a svg {
-    margin-right: 0;
-  }
-
-  .header__contact-mail svg {
-    width: 26px;
-    height: 19px;
-  }
-
-  .header__contact-phone svg {
-    width: 24px;
-    height: 24px;
-  }
-
-  .header__contact a span {
-    display: none;
+  .header__contact-phone {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .header__contact-button {
@@ -207,20 +225,22 @@
     padding: 17px 5% 17px 5%;
   }
 
-  .header__logo img {
-    width: 38px;
-    height: 38px;
-  }
+  .header__logo {
+    svg {
+      width: 38px;
+      height: 38px;
+    }
 
-  .header__logo div {
-    display: none;
+    div {
+      display: none;
+    }
   }
 
   .header__contact {
     max-width: 200px;
-  }
 
-  .header__contact li:not(:last-of-type) {
-    margin-right: 20px;
+    li:not(:last-of-type) {
+      margin-right: 20px;
+    }
   }
 }
