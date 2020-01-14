@@ -1,0 +1,165 @@
+.intro__wrapper {
+  padding: 0 1.2%;
+}
+
+.intro__product {
+  position: relative;
+  width: 65%;
+  padding: 200px 0 274px 0;
+  overflow: hidden;
+
+  h3 {
+    margin: 0 0 33px 0;
+    padding: 0;
+    font-family: $font-title;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 82px;
+    color: $color-text-white;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    width: 70%;
+    margin: 0 0 40px 93px;
+    padding: 0;
+    font-size: 22px;
+    line-height: 34px;
+    color: $color-text-white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  button {
+    position: absolute;
+    bottom: 125px;
+    left: 6px;
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-text-default;
+    background-color: transparent;
+    border: none;
+    transform: translateX(-50%) rotate(-90deg);
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+.intro__link {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 85%;
+  margin: 0 0 0 90px;
+  padding: 20px 60px;
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $color-btn;
+  border-radius: 5px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.intro__link-text {
+  &_tablet,
+  &_mobile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &_tablet {
+    display: block;
+  }
+  &_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $desktopWidth) {
+  .intro__product {
+    width: 62%;
+    padding: 100px 0 162px 0;
+    margin: 0 0 0 79px;
+
+    h3 {
+      font-size: 60px;
+      line-height: 67px;
+    }
+
+    p {
+      width: 90%;
+      margin: 0 0 55px 50px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .intro__link {
+    margin: 0 0 0 50px;
+    padding: 20px 45px;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .intro__product {
+    width: 95%;
+    padding: 217px 0 71px 0;
+    margin: 0 0 0 13px;
+
+    h3 {
+      margin: 0 0 29px 0;
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    p {
+      width: 75%;
+      margin: 0 0 42px 50px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .intro__link {
+    max-width: 96%;
+    margin: 0;
+    padding: 18px 42px;
+  }
+
+  .intro__link-text {
+    &_tablet {
+      display: none;
+    }
+    &_mobile {
+      display: block;
+    }
+  }
+}
