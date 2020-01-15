@@ -1,8 +1,8 @@
 .header {
   background-color: $color-bg-dark;
-  background-image: url("../img/bg-header-card@1x.png"), url("../img/bg-header-triangle.svg"), url("../img/bg-header@1x.png");
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: 85% 70%, 100% 100%, 0 0;
+  background-image: url("../img/bg-header-triangle.svg"), url("../img/bg-header@1x.png");
+  background-repeat: no-repeat, repeat-x;
+  background-position: 100% 100%, 0 0;
 }
 
 .header__wrapper {
@@ -141,11 +141,12 @@
   max-width: 200px;
   max-height: 46px;
   margin-left: 4.13%;
-  padding: 14px 32px;
+  padding: 14px 25px;
   font-family: $font-title;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+  letter-spacing: 1px;
   color: $color-text-white;
   text-decoration: none;
   text-transform: uppercase;
@@ -167,8 +168,8 @@
 
 @media (max-width: $desktopWidth) {
   .header {
-    background-size: 450px, 1600px, cover;
-    background-position: 515px 35%, 50% -130px, 100% 100%;
+    background-size: 1540px, cover;
+    background-position: 50% -140px, 100% 100%;
   }
 
   .header__wrapper {
@@ -230,8 +231,8 @@
 
 @media (max-width: $tabletWidth) {
   .header {
-    background-size: 300px, 1500px, cover;
-    background-position: 20px 20%, -650px -140px, 100% 100%;
+    background-size: 1500px, cover;
+    background-position: -630px -140px, 100% 100%;
   }
 
   .header__wrapper {

@@ -1,4 +1,14 @@
 .intro {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 140px;
+    right: -60px;
+  }
+}
+
+.intro__wrapper {
   padding: 0 1.2%;
 }
 
@@ -15,6 +25,7 @@
     font-size: 80px;
     font-weight: 700;
     line-height: 82px;
+    letter-spacing: 5px;
     color: $color-text-white;
     text-transform: uppercase;
     overflow: hidden;
@@ -22,38 +33,24 @@
   }
 
   p {
-    width: 70%;
-    margin: 0 0 40px 93px;
-    padding: 0;
+    position: relative;
+    width: 77%;
+    margin: 0;
+    padding: 0 0 40px 93px;
     font-size: 22px;
     line-height: 34px;
     color: $color-text-white;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
 
-  button {
-    position: absolute;
-    bottom: 125px;
-    left: 6px;
-    max-width: 200px;
-    font-size: 14px;
-    line-height: 16px;
-    color: $color-text-default;
-    background-color: transparent;
-    border: none;
-    transform: translateX(-50%) rotate(-90deg);
-    outline: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    &:hover,
-    &:focus {
-      opacity: 0.5;
-    }
-
-    &:active {
-      opacity: 0.8;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      width: 66px;
+      height: 2px;
+      background-color: $color-text-white;
     }
   }
 }
@@ -63,11 +60,12 @@
   vertical-align: middle;
   max-width: 85%;
   margin: 0 0 0 90px;
-  padding: 20px 60px;
+  padding: 20px 45px;
   font-family: $font-title;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  letter-spacing: 1px;
   color: $color-text-white;
   text-decoration: none;
   text-transform: uppercase;
@@ -101,7 +99,51 @@
   }
 }
 
+.intro__scroll {
+  position: absolute;
+  bottom: 125px;
+  left: 6px;
+  max-width: 200px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text-default;
+  background-color: transparent;
+  border: none;
+  transform: translateX(-50%) rotate(-90deg);
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: $desktopWidth + 560) {
+  .intro {
+    overflow: hidden;
+
+    img {
+      right: -165px;
+    }
+  }
+}
+
 @media (max-width: $desktopWidth) {
+  .intro {
+    overflow: hidden;
+
+    img {
+      width: 61%;
+      top: 20px;
+      right: -210px;
+    }
+  }
   .intro__product {
     width: 62%;
     padding: 100px 0 162px 0;
@@ -114,23 +156,37 @@
 
     p {
       width: 90%;
-      margin: 0 0 55px 50px;
+      padding: 0 0 55px 50px;
       font-size: 18px;
       line-height: 26px;
-    }
 
-    button {
-      display: none;
+      &::before {
+        width: 33px;
+      }
     }
   }
 
   .intro__link {
     margin: 0 0 0 50px;
-    padding: 20px 45px;
+    padding: 20px 30px;
+  }
+
+  .intro__scroll {
+    display: none;
   }
 }
 
 @media (max-width: $tabletWidth) {
+  .intro {
+    overflow: hidden;
+
+    img {
+      width: 304px;
+      top: 20px;
+      right: -10px;
+    }
+  }
+
   .intro__product {
     width: 95%;
     padding: 217px 0 71px 0;
@@ -143,17 +199,17 @@
     }
 
     p {
-      width: 75%;
-      margin: 0 0 42px 50px;
+      width: 95%;
+      padding: 0 0 42px 50px;
       font-size: 16px;
       line-height: 24px;
     }
   }
 
   .intro__link {
-    max-width: 96%;
+    max-width: 100%;
     margin: 0;
-    padding: 18px 41px;
+    padding: 18px 32px;
   }
 
   .intro__link-text {
