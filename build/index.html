@@ -52,21 +52,25 @@
       </div>
       <h1 class="visually-hidden">Главная страница сайта</h1>
       <div class="intro">
-        <h2 class="visually-hidden">Основная продукция</h2>
-        <div class="intro__product">
-          <h3>Печатные платы</h3>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="intro__link" href="#">
-            <span class="intro__link-text intro__link-text_tablet">Получить бесплатную консультацию</span>
-            <span class="intro__link-text intro__link-text_mobile">Бесплатная консультация</span>
-          </a>
-          <button type="button">Скролл вниз</button>
+        <!-- 1х: 705px; 2x: 1410px -->
+        <img src="img/bg-header-card@1x.png" width="705" height="515" srcset="img/bg-header-card@1x.png 1x, img/bg-header-card@2x.png 2x" alt="Изображение продукции">
+        <div class="intro__wrapper">
+          <h2 class="visually-hidden">Основная продукция</h2>
+          <div class="intro__product">
+            <h3>Печатные платы</h3>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="intro__link" href="#">
+              <span class="intro__link-text intro__link-text_tablet">Получить бесплатную консультацию</span>
+              <span class="intro__link-text intro__link-text_mobile">Бесплатная консультация</span>
+            </a>
+            <a class="intro__scroll" href="#">Скролл вниз</a>
+          </div>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="advantage">
+    <section class="advantage">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul>
@@ -100,10 +104,19 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <h2>О компании</h2>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <a class="about__link" href="#">Подробнее</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
-
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__head">
@@ -147,7 +160,6 @@
             </ul>
           </div>
         </div>
-
         <div class="footer__nav">
           <nav class="footer__nav-site">
             <div class="footer__nav-title">
@@ -180,7 +192,6 @@
               </li>
             </ul>
           </nav>
-
           <div class="footer__contact">
             <div class="footer__nav-title">
               <h2>Наш офис</h2>
@@ -196,7 +207,6 @@
         </div>
       </div>
     </div>
-
     <div class="footer__copyright">
       <div class="container">
         <div class="footer__copyright-wrapper">
