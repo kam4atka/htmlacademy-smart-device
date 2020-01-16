@@ -54,6 +54,16 @@
   text-overflow: ellipsis;
   border: 1px solid $color-btn;
   border-radius: 5px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $desktopWidth) {

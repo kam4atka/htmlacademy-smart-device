@@ -136,6 +136,34 @@
         </div>
       </div>
     </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__form">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset>
+                <legend class="visually-hidden">Форма обратной связи</legend>
+                <div class="contacts__form-list">
+                  <label class="visually-hidden" for="contact-name">Ваше имя:</label>
+                  <input class="contacts__form-input" type="text" id="contact-name" name="contact-name" placeholder="Имя" autocomplete="off" required>
+                  <label class="visually-hidden" for="contact-phone">Ваш номер телефона:</label>
+                  <input class="contacts__form-input" type="tel" id="contact-phone" name="contact-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" maxlength="18" autocomplete="off" required>
+                  <label class="visually-hidden" for="contact-message">Ваш вопрос:</label>
+                  <textarea class="contacts__form-textarea" id="contact-message" name="contact-message" cols="30" rows="7" placeholder="Ваш вопрос"></textarea>
+                  <button class="contacts__form-btn" type="submit">Задать вопрос</button>
+                  <input class="contacts__form-checkbox contacts__checkbox visually-hidden" type="checkbox" id="contact-assent" name="contact-assent" checked required>
+                  <label class="contacts__checkbox-label" for="contact-assent">
+                    Я согласен на обработку персональных данных
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -243,5 +271,7 @@
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,245 @@
+.contacts {
+  background-color: $color-bg-blue;
+}
+
+.contacts__wrapper {
+  position: relative;
+  padding: 93px 9.5% 105px 9.5%;
+  background-image: url(../img/bg-contacts-airplane@1x.png), url(../img/bg-header-triangle.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: 115px 160px,-1065px -185px;
+  background-size: 35%,135%;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contacts__wrapper {
+    background-image: url(../img/bg-contacts-airplane@2x.png), url(../img/bg-header-triangle.svg);
+  }
+}
+
+.contacts__form {
+  width: 50%;
+  margin-left: auto;
+  padding: 8px 0 8px 15px;
+
+  h2 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-family: $font-title;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 38px;
+    color: $color-text-white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    margin: 0 0 55px 6px;
+    padding: 0;
+    color: $color-text-white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  legend {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-text-white;
+  }
+}
+
+.contacts__form-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 571px;
+}
+
+.contacts__form-input,
+.contacts__form-textarea,
+.contacts__form-input::placeholder,
+.contacts__form-textarea::placeholder {
+  color: $color-text-white;
+}
+
+.contacts__form-input,
+.contacts__form-textarea {
+  background-color: $color-input;
+  border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-input-hover;
+  }
+}
+
+.contacts__form-input {
+  width: 47%;
+  margin-bottom: 40px;
+  padding: 15px 18px;
+}
+
+.contacts__form-textarea {
+  width: 100%;
+  margin-bottom: 41px;
+  padding: 15px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contacts__form-btn {
+  width: 47%;
+  padding: 14px 75px;
+  font-family: $font-title;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: $color-text-white;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  border: 1px solid $color-text-white;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.contacts__checkbox {
+  &:checked + .contacts__checkbox-label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/icon-checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &:hover + .contacts__checkbox-label,
+  &:focus + .contacts__checkbox-label {
+    opacity: 0.5;
+  }
+}
+
+.contacts__checkbox-label {
+  position: relative;
+  width: 46%;
+  padding-left: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 16px;
+    border: 1px solid $color-text-white;
+  }
+}
+
+@media (max-width: $desktopWidth + 417) {
+  .contacts__wrapper {
+    background-position: 115px 160px,-500px -10px;
+    background-size: 19%,98%;
+  }
+  .contacts__form {
+    width: 70%;
+  }
+}
+
+@media (max-width: $desktopWidth) {
+  .contacts__wrapper {
+    margin: 0 3%;
+    padding: 85px 0 104px;
+    background-image: none;
+  }
+
+  .contacts__form {
+    width: 100%;
+    padding: 0 65px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 34px;
+      margin: 0 0 25px 0;
+    }
+  }
+
+  .contacts__form-input {
+    margin-bottom: 46px;
+  }
+
+  .contacts__form-textarea {
+    margin-bottom: 46px;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .contacts__wrapper {
+    margin: 0 4%;
+    padding: 35px 0 44px 0;
+  }
+
+  .contacts__form {
+    padding: 0;
+
+    h2 {
+      margin: 0 0 17px 0;
+      font-size: 28px;
+      line-height: 37px;
+    }
+
+    p {
+      margin: 0 0 32px 0;
+    }
+  }
+
+  .contacts__form-input {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .contacts__form-textarea {
+    max-height: 104px;
+    margin-bottom: 29px;
+  }
+
+  .contacts__form-btn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contacts__checkbox-label {
+    width: 100%;
+    padding-left: 34px;
+  }
+}
