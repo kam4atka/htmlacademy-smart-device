@@ -36,7 +36,18 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 370px auto;
+  text-decoration: none;
+  outline: none;
   overflow: hidden;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 
   &_output {
     background-image: url("../img/catalog-item-output@1x.png");
