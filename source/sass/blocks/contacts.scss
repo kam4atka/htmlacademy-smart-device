@@ -5,15 +5,15 @@
 .contacts__wrapper {
   position: relative;
   padding: 93px 9.5% 105px 9.5%;
-  background-image: url(../img/bg-contacts-airplane@1x.png), url(../img/bg-header-triangle.svg);
-  background-repeat: no-repeat,no-repeat;
-  background-position: 115px 160px,-1065px -185px;
-  background-size: 35%,135%;
+  background-image: url("../img/bg-contacts-airplane@1x.png"), url("../img/bg-header-triangle.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 115px 160px, -1065px -185px;
+  background-size: 35%, 135%;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__wrapper {
-    background-image: url(../img/bg-contacts-airplane@2x.png), url(../img/bg-header-triangle.svg);
+    background-image: url("../img/bg-contacts-airplane@2x.png"), url("../img/bg-header-triangle.svg");
   }
 }
 
@@ -168,9 +168,10 @@
 
 @media (max-width: $desktopWidth + 417) {
   .contacts__wrapper {
-    background-position: 115px 160px,-500px -10px;
-    background-size: 19%,98%;
+    background-position: 115px 160px, -500px -10px;
+    background-size: 19%, 98%;
   }
+
   .contacts__form {
     width: 70%;
   }
