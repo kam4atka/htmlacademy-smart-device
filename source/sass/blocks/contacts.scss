@@ -67,7 +67,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 571px;
 }
 
 .contacts__form-input,
@@ -105,6 +104,7 @@
 
 .contacts__form-btn {
   width: 47%;
+  max-width: 270px;
   padding: 14px 75px;
   font-family: $font-title;
   font-size: 14px;
@@ -151,6 +151,7 @@
 .contacts__checkbox-label {
   position: relative;
   width: 46%;
+  max-width: 270px;
   padding-left: 34px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -236,11 +237,13 @@
 
   .contacts__form-btn {
     width: 100%;
+    max-width: 295px;
     margin-bottom: 30px;
   }
 
   .contacts__checkbox-label {
     width: 100%;
+    max-width: 295px;
     padding-left: 34px;
   }
 }

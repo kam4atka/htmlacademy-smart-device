@@ -59,18 +59,18 @@
           <div class="intro__product">
             <h3>Печатные платы</h3>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="intro__link" href="#">
+            <a class="intro__link" href="#contacts">
               <span class="intro__link-text intro__link-text_tablet">Получить бесплатную консультацию</span>
               <span class="intro__link-text intro__link-text_mobile">Бесплатная консультация</span>
             </a>
-            <a class="intro__scroll" href="#">Скролл вниз</a>
+            <a class="intro__scroll" href="#advantage">Скролл вниз</a>
           </div>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul>
@@ -121,22 +121,21 @@
           <h2>Service Device предлагает следующие товары и услуги</h2>
           <div class="catalog__list">
             <a class="catalog__item catalog__item_components" href="#">
-              <h3>Производство  <br> печатных плат</h3>
+              <h3>Производство <br> печатных плат</h3>
               <span class="catalog__item-arrow"></span>
             </a>
             <a class="catalog__item catalog__item_components" href="#">
-              <h3>Монтаж печатных  <br> плат</h3>
+              <h3>Монтаж печатных <br> плат</h3>
               <span class="catalog__item-arrow"></span>
             </a>
             <a class="catalog__item catalog__item_components" href="#">
               <h3>Комплектующие <br> для светотехники</h3>
               <span class="catalog__item-arrow"></span>
             </a>
-          </div>
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__form">
@@ -217,41 +216,45 @@
                 <span class="visually-hidden">Открыть блок</span>
               </button>
             </div>
-            <ul>
-              <li>
-                <a href="#">О компании</a>
-              </li>
-              <li>
-                <a href="#">Продукты</a>
-              </li>
-              <li>
-                <a href="#">Производство печатных плат</a>
-              </li>
-              <li>
-                <a href="#">Монтаж печатных плат</a>
-              </li>
-              <li>
-                <a href="#">Комплектующие</a>
-              </li>
-              <li>
-                <a href="#">Доставка</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
+            <div class="footer__nav-main footer__nav-main_hide">
+              <ul>
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Продукты</a>
+                </li>
+                <li>
+                  <a href="#">Производство печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <div class="footer__contact">
-            <div class="footer__nav-title">
+            <div class="footer__contact-title">
               <h2>Наш офис</h2>
               <button  class="footer__nav-btn footer__nav-btn_close" type="button">
                 <span class="visually-hidden">Закрыть блок</span>
               </button>
             </div>
-            <p>г. Мытищи, Олимпийский проспект, д.10</p>
-            <p>+7 (495) 589-40-50</p>
-            <p>+7 (925) 003-87-67</p>
-            <p>+7 (926) 926-080-79</p>
+            <div class="footer__nav-main">
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
+              <p>+7 (495) 589-40-50</p>
+              <p>+7 (925) 003-87-67</p>
+              <p>+7 (926) 926-080-79</p>
+            </div>
           </div>
         </div>
       </div>
@@ -297,7 +300,7 @@
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <script src="js/inputmask.min.js"></script>
+  <script src="js/inputmask.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

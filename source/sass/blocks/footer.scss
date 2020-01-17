@@ -405,18 +405,21 @@
       margin: 0;
       padding: 0;
     }
-
-    ul {
-      display: none;
-    }
   }
 
-  .footer__nav-title {
+  .footer__nav-title,
+  .footer__contact-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0 27px;
+  }
+
+  .footer__nav-main {
+    &_hide {
+      display: none;
+    }
   }
 
   .footer__contact {
