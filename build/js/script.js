@@ -42,8 +42,8 @@
 
   var initialPage = function () {
 
-    function modalHandler(evt) {
-      evt.preventDefault();
+    function modalHandler(mhEvt) {
+      mhEvt.preventDefault();
 
       var overlay = document.querySelector('.overlay');
       var modal = document.querySelector('.modal');
@@ -88,18 +88,67 @@
 
         var modalPhoneItem = modal.querySelector('#modal-phone');
         validatePhone(modalPhoneItem);
+
+        var name = modal.querySelector('#modal-name');
+        var phone = modal.querySelector('#modal-phone');
+        var mesg = modal.querySelector('#modal-message');
+
+        var isStorageSupport = true;
+        var storageName = '';
+        var storagePhone = '';
+        var storageMesg = '';
+
+        try {
+          storageName = localStorage.getItem('name');
+          storagePhone = localStorage.getItem('phone');
+          storageMesg = localStorage.getItem('mesg');
+        } catch (err) {
+          isStorageSupport = false;
+        }
+
+        if (isStorageSupport) {
+          if (storageName) {
+            name.value = storageName;
+          }
+          if (storagePhone) {
+            phone.value = storagePhone;
+          }
+          if (storageMesg) {
+            mesg.innerText = storageMesg;
+          }
+        }
+
+        var sendHandler = function (shEvt) {
+          if (!name.value) {
+            shEvt.preventDefault();
+            name.focus();
+          } else if (name.value && !phone.value) {
+            shEvt.preventDefault();
+            phone.focus();
+          } else if (name.value && phone.value && !mesg.value) {
+            shEvt.preventDefault();
+            mesg.focus();
+          } else {
+            localStorage.setItem('name', name.value);
+            localStorage.setItem('phone', phone.value);
+            localStorage.setItem('mesg', mesg.value);
+          }
+        };
+
+        var btnForm = modal.querySelector('.modal__form-btn');
+        btnForm.addEventListener('click', sendHandler);
       }
+    }
+
+    var modalInput = document.querySelector('.header__contact-button');
+    if (modalInput) {
+      modalInput.addEventListener('click', modalHandler);
     }
 
     var contactsForm = document.querySelector('.contacts__form');
     if (contactsForm) {
       var phoneItem = contactsForm.querySelector('#contact-phone');
       validatePhone(phoneItem);
-    }
-
-    var modalInput = document.querySelector('.header__contact-button');
-    if (modalInput) {
-      modalInput.addEventListener('click', modalHandler);
     }
 
     var linkList = document.querySelectorAll('.intro__link, .intro__scroll');
