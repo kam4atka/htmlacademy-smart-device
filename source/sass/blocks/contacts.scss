@@ -1,5 +1,9 @@
 .contacts {
   background-color: $color-bg-blue;
+  background-image: url("../img/bg-advantage-triangle-small-lft.svg"), url("../img/../img/bg-advantage-triangle-small-rgt.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 94% 20%, 105% 83%;
+  background-size: 9%, 15%;
 }
 
 .contacts__wrapper {
@@ -7,8 +11,8 @@
   padding: 93px 9.5% 105px 9.5%;
   background-image: url("../img/bg-contacts-airplane@1x.png"), url("../img/bg-header-triangle.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 115px 160px, -1065px -185px;
-  background-size: 35%, 135%;
+  background-position: 12% 42%, 0% 55%;
+  background-size: 35%, 43%;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -105,7 +109,7 @@
 .contacts__form-btn {
   width: 47%;
   max-width: 270px;
-  padding: 14px 75px;
+  padding: 14px 74px;
   font-family: $font-title;
   font-size: 14px;
   font-weight: 700;
@@ -167,10 +171,10 @@
   }
 }
 
-@media (max-width: $desktopWidth + 417) {
+@media (max-width: $desktopWidth + 560) {
   .contacts__wrapper {
-    background-position: 115px 160px, -500px -10px;
-    background-size: 19%, 98%;
+    background-position: 10% 50%, 0 50%;
+    background-size: 25%, 40%;
   }
 
   .contacts__form {
@@ -179,6 +183,10 @@
 }
 
 @media (max-width: $desktopWidth) {
+  .contacts {
+    background-image: none;
+  }
+
   .contacts__wrapper {
     margin: 0 3%;
     padding: 85px 0 104px;
@@ -208,7 +216,7 @@
 @media (max-width: $tabletWidth) {
   .contacts__wrapper {
     margin: 0 4%;
-    padding: 35px 0 44px 0;
+    padding: 35px 0 14px 0;
   }
 
   .contacts__form {
@@ -223,6 +231,10 @@
     p {
       margin: 0 0 32px 0;
     }
+  }
+
+  .contacts__form-list {
+    justify-content: center;
   }
 
   .contacts__form-input {
@@ -244,6 +256,7 @@
   .contacts__checkbox-label {
     width: 100%;
     max-width: 295px;
+    margin: 0 0 30px 30px;
     padding-left: 34px;
   }
 }

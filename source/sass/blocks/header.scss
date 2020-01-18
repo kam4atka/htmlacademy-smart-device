@@ -2,7 +2,7 @@
   background-color: $color-bg-dark;
   background-image: url("../img/bg-header-triangle.svg"), url("../img/bg-header@1x.png");
   background-repeat: no-repeat, repeat-x;
-  background-position: 100% 100%, 0 0;
+  background-position: 79% 72%, 0 0;
 }
 
 .header__wrapper {
@@ -167,8 +167,8 @@
 
 @media (max-width: $desktopWidth) {
   .header {
-    background-size: 1540px, cover;
-    background-position: 50% -140px, 100% 100%;
+    background-size: 480px, cover;
+    background-position: 460px 85px, 100% 100%;
   }
 
   .header__wrapper {
@@ -230,8 +230,8 @@
 
 @media (max-width: $tabletWidth) {
   .header {
-    background-size: 1500px, cover;
-    background-position: -630px -140px, 100% 100%;
+    background-size: 450px, cover;
+    background-position: 170px 70px, 100% 100%;
   }
 
   .header__wrapper {

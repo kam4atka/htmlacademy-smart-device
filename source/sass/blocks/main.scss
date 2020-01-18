@@ -1,9 +1,9 @@
 .main {
   flex: 1 0 auto;
-  background-image: url("../img/bg-advantage-triangle-small.svg"), url("../img/bg-advantage-triangle-big-rgt.svg"), url("../img/bg-advantage-triangle-big-lft.svg");
-  background-size: 17%, 50%, 50%;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 96% 15%, 50% 5%, -50% 19%;
+  background-image: url("../img/bg-advantage-triangle-small-lft.svg"), url("../img/bg-advantage-triangle-small-rgt.svg"), url("../img/bg-advantage-triangle-big-rgt.svg"), url("../img/bg-advantage-triangle-big-lft.svg");
+  background-size: 11%, 12%, 26%, 26%;
+  background-repeat: no-repeat;
+  background-position: 13% 2%, 99% 17%, 58% 12%, -14% 26%;
 }
 
 @media (max-width: $desktopWidth) {
