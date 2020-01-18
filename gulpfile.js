@@ -90,7 +90,7 @@ gulp.task("js", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/inputmask.js",
+    "source/js/inputmask.min.js",
     "source/img/**",
     "source//*.ico"
     ], {
