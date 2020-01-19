@@ -7,7 +7,7 @@
     imPhone.mask(element);
   };
 
-  function animating(object) {
+  var animating = function (object) {
     var start = performance.now();
     requestAnimationFrame(function animate(time) {
       var timeFraction = (time - start) / object.duration;
@@ -20,7 +20,7 @@
         requestAnimationFrame(animate);
       }
     });
-  }
+  };
 
   var scrollHandler = function (sEvt) {
     sEvt.preventDefault();
@@ -38,6 +38,18 @@
     };
 
     animating(params);
+  };
+
+  var hideList = function (item, btn) {
+    item.classList.add('footer__nav_hide');
+    btn.classList.remove('footer__nav-btn_close');
+    btn.classList.add('footer__nav-btn_open');
+  };
+
+  var showList = function (item, btn) {
+    item.classList.remove('footer__nav_hide');
+    btn.classList.remove('footer__nav-btn_open');
+    btn.classList.add('footer__nav-btn_close');
   };
 
   var initialPage = function () {
@@ -155,6 +167,36 @@
     for (var i = 0; i < linkList.length; i++) {
       linkList[i].addEventListener('click', scrollHandler);
     }
+
+    var btnItemHandler = function (bEvt) {
+      bEvt.preventDefault();
+      var element = bEvt.target;
+      var parent = bEvt.currentTarget.parentNode;
+
+      if (element.classList.contains('footer__nav-btn')) {
+        if (element.classList.contains('footer__nav-btn_close')) {
+          hideList(parent, element);
+        } else if (element.classList.contains('footer__nav-btn_open')) {
+          passageList(listAccordion, 'closeall');
+          showList(parent, element);
+        }
+      }
+    };
+
+    var listAccordion = document.querySelectorAll('.footer__nav-site, .footer__contact');
+    var passageList = function (array, status) {
+      for (var j = 0; j < array.length; j++) {
+        var itemList = array[j];
+        if (status === 'initial') {
+          var headItem = itemList.querySelector('.footer__nav-title');
+          headItem.addEventListener('click', btnItemHandler);
+        }
+        if (status === 'closeall') {
+          hideList(itemList, itemList.querySelector('.footer__nav-btn'));
+        }
+      }
+    };
+    passageList(listAccordion, 'initial');
   };
   window.addEventListener('load', initialPage);
 })();
