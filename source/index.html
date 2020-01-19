@@ -23,13 +23,13 @@
           <svg width="52" height="52">
             <use xlink:href="#icon-logo">
           </svg>
-          <div>
+          <div class="header__logo-text">
             <p>Smart Device</p>
             <span>умные технологии</span>
           </div>
         </a>
         <div class="header__contact">
-          <ul>
+          <ul class="header__contact-list">
             <li>
               <a class="header__contact-mail" href="mailto:info@sd.ru" aria-label="Написать электронное письмо">
                 <svg width="19" height="14">
@@ -73,7 +73,7 @@
     <section class="advantage" id="advantage">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul>
+        <ul class="advantage__list">
           <li>
             <svg width="29" height="35">
               <use xlink:href="#icon-stopwatch">
@@ -172,7 +172,7 @@
             <svg width="52" height="52">
               <use xlink:href="#icon-logo">
             </svg>
-            <div>
+            <div class="footer__logo-text">
               <p>Service Device</p>
               <span>умные технологии</span>
             </div>
@@ -180,7 +180,7 @@
           <p class="footer__company">1999-2018 SD Service Devices</p>
           <div class="footer__social">
             <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-            <ul>
+            <ul class="footer__social-list">
               <li>
                 <a href="#">
                   <svg width="27" height="27">
@@ -209,18 +209,15 @@
           </div>
         </div>
         <div class="footer__nav">
-
           <nav class="footer__nav-site footer__nav_hide">
-
             <div class="footer__nav-title">
               <h2>Разделы сайта</h2>
               <button class="footer__nav-btn footer__nav-btn_open" type="button">
                 <span class="visually-hidden">Открыть блок</span>
               </button>
             </div>
-
             <div class="footer__nav-main">
-              <ul>
+              <ul class="footer__nav-list">
                 <li>
                   <a href="#">О компании</a>
                 </li>
@@ -245,16 +242,13 @@
               </ul>
             </div>
           </nav>
-
           <div class="footer__contact">
-
             <div class="footer__nav-title">
               <h2>Наш офис</h2>
               <button  class="footer__nav-btn footer__nav-btn_close" type="button">
                 <span class="visually-hidden">Закрыть блок</span>
               </button>
             </div>
-
             <div class="footer__contact-main">
               <p>г. Мытищи, Олимпийский проспект, д.10</p>
               <p>+7 (495) 589-40-50</p>
@@ -306,7 +300,7 @@
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <script src="js/inputmask.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

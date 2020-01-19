@@ -1,12 +1,10 @@
-.advantage {
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 112px 9.5% 105px 9.5%;
-    padding: 0;
-    list-style: none;
-  }
+.advantage__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 112px 9.5% 105px 9.5%;
+  padding: 0;
+  list-style: none;
 
   li {
     width: 49%;
@@ -63,10 +61,8 @@
 }
 
 @media (max-width: $desktopWidth) {
-  .advantage {
-    ul {
-      margin: 53px 3% 50px 3%;
-    }
+  .advantage__list {
+    margin: 53px 3% 50px 3%;
 
     li {
       width: 48%;
@@ -93,10 +89,8 @@
 }
 
 @media (max-width: $tabletWidth) {
-  .advantage {
-    ul {
-      margin: 40px 4% 35px 4%;
-    }
+  .advantage__list {
+    margin: 40px 4% 35px 4%;
 
     li {
       width: 99%;
