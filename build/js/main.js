@@ -26,6 +26,7 @@
     sEvt.preventDefault();
     var targetElement = document.querySelector(sEvt.currentTarget.href.replace(/[^#]*(.*)/, '$1'));
     var targetY = targetElement.getBoundingClientRect().y;
+    var startY = window.pageYOffset;
 
     var params = {
       duration: 2000,
@@ -33,7 +34,7 @@
         return timeFraction;
       },
       draw: function (progress) {
-        window.scrollTo(0, progress * targetY);
+        window.scrollTo(0, startY + progress * targetY);
       }
     };
 
@@ -104,6 +105,7 @@
         var name = modal.querySelector('#modal-name');
         var phone = modal.querySelector('#modal-phone');
         var mesg = modal.querySelector('#modal-message');
+        name.focus();
 
         var isStorageSupport = true;
         var storageName = '';
