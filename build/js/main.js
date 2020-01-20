@@ -26,11 +26,12 @@
     sEvt.preventDefault();
     var targetElement = document.querySelector(sEvt.currentTarget.href.replace(/[^#]*(.*)/, '$1'));
     var ua = navigator.userAgent;
-    var browserIe = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+    var browserIe = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+    var targetY;
     if (browserIe) {
-      var targetY = targetElement.getBoundingClientRect().top;
+      targetY = targetElement.getBoundingClientRect().top;
     } else {
-      var targetY = targetElement.getBoundingClientRect().y;
+      targetY = targetElement.getBoundingClientRect().y;
     }
     var startY = window.pageYOffset;
 
