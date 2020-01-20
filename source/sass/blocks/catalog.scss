@@ -129,6 +129,7 @@
 @media (max-width: $desktopWidth) {
   .catalog {
     h2 {
+      width: 85%;
       margin: 0 0 47px 0;
       font-size: 32px;
       line-height: 45px;
@@ -137,7 +138,7 @@
 
   .catalog__wrapper {
     margin: 0 3%;
-    padding: 53px 0 78px 0;
+    padding: 50px 0 78px 0;
   }
 
   .catalog__list {
@@ -149,7 +150,7 @@
     height: 256px;
     margin-right: 0;
     margin-bottom: 46px;
-    padding: 40px 44px;
+    padding: 40px 47px;
     background-position: 50% 50%;
     background-size: 100% auto;
 
@@ -166,6 +167,7 @@
 @media (max-width: $tabletWidth) {
   .catalog {
     h2 {
+      width: 100%;
       margin: 0 0 37px 10px;
       font-size: 28px;
       line-height: 40px;
@@ -174,11 +176,11 @@
 
   .catalog__wrapper {
     margin: 0 4%;
-    padding: 50px 0 64px 0;
+    padding: 50px 0 67px 0;
   }
 
   .catalog__item {
     margin-bottom: 30px;
-    padding: 26px 37px;
+    padding: 23px 37px;
   }
 }

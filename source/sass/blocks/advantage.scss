@@ -62,11 +62,12 @@
 
 @media (max-width: $desktopWidth) {
   .advantage__list {
-    margin: 53px 3% 50px 3%;
+    margin: 53px 3% 27px 3%;
 
     li {
       width: 48%;
-      padding: 27px 17px 21px 25px;
+      min-height: 233px;
+      padding: 23px 15px 20px 25px;
 
       &:nth-of-type(2n) {
         margin-left: 4%;
@@ -74,7 +75,7 @@
     }
 
     svg {
-      margin-bottom: 4px;
+      margin-bottom: 9px;
     }
 
     h3 {
@@ -82,8 +83,7 @@
     }
 
     p {
-      font-size: 17px;
-      line-height: 22px;
+      letter-spacing: 0.5px;
     }
   }
 }
@@ -93,8 +93,9 @@
     margin: 40px 4% 35px 4%;
 
     li {
-      width: 99%;
-      padding: 20px 20px 18px 25px;
+      width: 100%;
+      margin-bottom: 25px;
+      padding: 19px 11px 26px 26px;
 
       &:nth-of-type(2n) {
         margin-left: 0;
@@ -106,12 +107,14 @@
     }
 
     h3 {
+      width: 95%;
       font-size: 20px;
     }
 
     p {
-      font-size: 14px;
-      line-height: 23px;
+      width: 99%;
+      line-height: 21px;
+      letter-spacing: 0;
     }
   }
 }

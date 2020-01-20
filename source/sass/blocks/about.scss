@@ -23,7 +23,7 @@
 
 .about__wrapper {
   min-height: 315px;
-  margin: 96px 9.5%;
+  margin: 96px 10% 96px 9.5%;
   padding: 0 0 0 180px;
   background-image: url("../img/about-year@1x.png");
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@
 @media (max-width: $desktopWidth) {
   .about {
     h2 {
-      margin: 0 0 28px 0;
+      margin: 0 0 31px 0;
       font-size: 32px;
       line-height: 34px;
     }
@@ -83,33 +83,33 @@
         margin-bottom: 40px;
       }
     }
-
-    .about__link {
-      padding: 15px 58px;
-    }
   }
 
   .about__wrapper {
     margin: 0 3% 80px 3%;
-    padding: 0 0 0 190px;
+    padding: 7px 0 0 190px;
     background-size: auto 345px;
+  }
+
+  .about__link {
+    padding: 15px 50px;
   }
 }
 
 @media (max-width: $tabletWidth) {
   .about {
     h2 {
-      margin: 0 0 27px 0;
+      margin: 0 0 29px 0;
       font-size: 28px;
       line-height: 30px;
     }
 
     p {
       max-height: 170px;
-      margin: 0 0 45px 0;
+      margin: 0 0 47px 4px;
 
       &:last-of-type {
-        margin-bottom: 33px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -119,5 +119,10 @@
     margin: 0 4% 60px 4%;
     padding: 0;
     background-image: none;
+  }
+
+  .about__link {
+    margin: 0 0 0 4px;
+    padding: 14px 51px;
   }
 }

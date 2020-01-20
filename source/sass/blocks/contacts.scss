@@ -8,11 +8,11 @@
 
 .contacts__wrapper {
   position: relative;
-  padding: 93px 9.5% 105px 9.5%;
+  padding: 93px 9.5% 102px 9.5%;
   background-image: url("../img/bg-contacts-airplane@1x.png"), url("../img/bg-header-triangle.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 12% 42%, 0% 55%;
-  background-size: 35%, 43%;
+  background-size: 35.5%, 43%;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -24,10 +24,10 @@
 .contacts__form {
   width: 50%;
   margin-left: auto;
-  padding: 8px 0 8px 15px;
+  padding: 5px 0 11px 12px;
 
   h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 19px 0;
     padding: 0;
     font-family: $font-title;
     font-size: 36px;
@@ -39,7 +39,7 @@
   }
 
   p {
-    margin: 0 0 55px 6px;
+    margin: 0 0 53px 3px;
     padding: 0;
     color: $color-text-white;
     overflow: hidden;
@@ -71,6 +71,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 0 3px;
 }
 
 .contacts__form-input::placeholder,
@@ -95,13 +96,13 @@
 .contacts__form-input {
   width: 47%;
   margin-bottom: 40px;
-  padding: 15px 18px;
+  padding: 15px 16px;
 }
 
 .contacts__form-textarea {
   width: 100%;
-  margin-bottom: 41px;
-  padding: 15px 20px;
+  margin-bottom: 43px;
+  padding: 15px 16px;
   resize: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -109,7 +110,7 @@
 
 .contacts__form-btn {
   width: 47%;
-  max-width: 270px;
+  max-width: 285px;
   padding: 14px 74px;
   font-family: $font-title;
   font-size: 14px;
@@ -122,6 +123,7 @@
   text-overflow: ellipsis;
   background-color: transparent;
   border: 1px solid $color-text-white;
+  border-radius: 5px;
   outline: none;
   cursor: pointer;
 
@@ -205,21 +207,31 @@
       line-height: 34px;
       margin: 0 0 25px 0;
     }
+
+    p {
+      margin: 0 0 57px 5px;
+    }
   }
 
   .contacts__form-input {
     margin-bottom: 46px;
+    padding: 15px 18px;
   }
 
   .contacts__form-textarea {
     margin-bottom: 46px;
+    padding: 12px 19px 19px 19px;
+  }
+
+  .contacts__form-btn {
+    width: 48%;
   }
 }
 
 @media (max-width: $tabletWidth) {
   .contacts__wrapper {
     margin: 0 4%;
-    padding: 35px 0 14px 0;
+    padding: 32px 0 14px 0;
   }
 
   .contacts__form {
@@ -232,7 +244,7 @@
     }
 
     p {
-      margin: 0 0 32px 0;
+      margin: 0 0 32px 2px;
     }
   }
 
@@ -243,11 +255,13 @@
   .contacts__form-input {
     width: 100%;
     margin-bottom: 34px;
+    padding: 15px 16px;
   }
 
   .contacts__form-textarea {
     max-height: 104px;
     margin-bottom: 29px;
+    padding: 12px 16px 19px;
   }
 
   .contacts__form-btn {
