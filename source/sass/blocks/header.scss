@@ -79,7 +79,6 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   flex-grow: 1;
-  max-width: 1100px;
 }
 
 .header__contact-list {
@@ -237,6 +236,7 @@
 
   .header__logo {
     min-width: 150px;
+
     svg {
       width: 38px;
       height: 38px;

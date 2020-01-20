@@ -25,7 +25,14 @@
   var scrollHandler = function (sEvt) {
     sEvt.preventDefault();
     var targetElement = document.querySelector(sEvt.currentTarget.href.replace(/[^#]*(.*)/, '$1'));
-    var targetY = targetElement.getBoundingClientRect().y;
+    var ua = navigator.userAgent;
+    var browserIe = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+    var targetY;
+    if (browserIe) {
+      targetY = targetElement.getBoundingClientRect().top;
+    } else {
+      targetY = targetElement.getBoundingClientRect().y;
+    }
     var startY = window.pageYOffset;
 
     var params = {

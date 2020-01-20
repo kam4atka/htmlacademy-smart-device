@@ -101,8 +101,6 @@
   text-overflow: ellipsis;
 }
 
-.modal__form-input,
-.modal__form-textarea,
 .modal__form-input::placeholder,
 .modal__form-textarea::placeholder {
   color: $color-text-white;
@@ -111,6 +109,7 @@
 .modal__form-input,
 .modal__form-textarea {
   max-width: 410px;
+  color: $color-text-white;
   background-color: $color-input;
   border: none;
   box-shadow: none;
@@ -120,10 +119,6 @@
   &:focus {
     background-color: $color-input-hover;
   }
-}
-
-.modal__form-textarea {
-  resize: vertical;
 }
 
 .modal__form-input {
@@ -137,6 +132,7 @@
   padding: 15px 20px;
   overflow: hidden;
   text-overflow: ellipsis;
+  resize: vertical;
 }
 
 .modal__form-btn {

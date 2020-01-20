@@ -378,15 +378,19 @@
 
     &_open::before,
     &_close::before {
+      top: 50%;
+      left: 0;
       height: 1px;
       width: 100%;
-      transform: translateX(-50%);
+      transform: translateY(-50%);
     }
 
     &_open::after {
+      top: 0;
+      left: 50%;
       width: 1px;
       height: 100%;
-      transform: translateY(-50%);
+      transform: translateX(-50%);
     }
   }
 

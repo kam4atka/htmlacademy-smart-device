@@ -73,8 +73,6 @@
   align-items: center;
 }
 
-.contacts__form-input,
-.contacts__form-textarea,
 .contacts__form-input::placeholder,
 .contacts__form-textarea::placeholder {
   color: $color-text-white;
@@ -82,6 +80,7 @@
 
 .contacts__form-input,
 .contacts__form-textarea {
+  color: $color-text-white;
   background-color: $color-input;
   border: none;
   box-shadow: none;
