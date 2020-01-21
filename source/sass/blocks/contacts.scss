@@ -39,7 +39,7 @@
   }
 
   p {
-    margin: 0 0 53px 3px;
+    margin: 0 0 52px 3px;
     padding: 0;
     color: $color-text-white;
     overflow: hidden;
@@ -111,7 +111,7 @@
 .contacts__form-btn {
   width: 47%;
   max-width: 285px;
-  padding: 14px 74px;
+  padding: 13px 74px;
   font-family: $font-title;
   font-size: 14px;
   font-weight: 700;
@@ -160,7 +160,7 @@
   position: relative;
   width: 46%;
   max-width: 270px;
-  padding-left: 34px;
+  padding-left: 32px;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
@@ -225,6 +225,7 @@
 
   .contacts__form-btn {
     width: 48%;
+    max-width: 281px;
   }
 }
 
@@ -244,7 +245,8 @@
     }
 
     p {
-      margin: 0 0 32px 2px;
+      margin: 0 0 28px 2px;
+      line-height: 20px;
     }
   }
 
@@ -260,20 +262,21 @@
 
   .contacts__form-textarea {
     max-height: 104px;
-    margin-bottom: 29px;
+    margin-bottom: 31px;
     padding: 12px 16px 19px;
   }
 
   .contacts__form-btn {
     width: 100%;
     max-width: 295px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .contacts__checkbox-label {
+    align-self: flex-start;
     width: 100%;
     max-width: 265px;
-    margin: 0 0 30px 30px;
+    margin: 0 30px 28px 0;
     padding-left: 34px;
   }
 }

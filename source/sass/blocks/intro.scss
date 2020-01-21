@@ -36,7 +36,7 @@
     position: relative;
     width: 77%;
     margin: 0;
-    padding: 0 0 40px 93px;
+    padding: 0 0 41px 93px;
     font-size: 22px;
     line-height: 34px;
     color: $color-text-white;
@@ -147,17 +147,18 @@
 
   .intro__product {
     width: 62%;
-    padding: 100px 0 162px 0;
+    padding: 98px 0 162px 0;
     margin: 0 0 0 79px;
 
     h3 {
+      margin: 0 0 31px 0;
       font-size: 60px;
-      line-height: 67px;
+      line-height: 69px;
     }
 
     p {
       width: 90%;
-      padding: 0 0 55px 50px;
+      padding: 0 0 56px 50px;
       font-size: 18px;
       line-height: 26px;
 
@@ -169,7 +170,7 @@
 
   .intro__link {
     margin: 0 0 0 50px;
-    padding: 20px 30px;
+    padding: 19px 30px;
   }
 
   .intro__scroll {
