@@ -14,17 +14,17 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
 var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
@@ -84,13 +84,14 @@ gulp.task("html", function () {
 
 gulp.task("js-common", function () {
   return gulp.src("source/js/common/*.js")
+    .pipe(uglify())
     .pipe(rename("main.js"))
     .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("js-vendor", function () {
   return gulp.src("source/js/vendor/*.js")
-    .pipe(rename("vendor.js"))
+    .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"));
 });
 
