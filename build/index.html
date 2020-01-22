@@ -7,14 +7,14 @@
   <title>Smart Device</title>
   <meta name="description" content="Производство и монтаж, поставка  электронных комплектующих, блоков и модулей">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/ptMono.woff2" as="font">
-  <link rel="preload" href="fonts/ptMono.woff" as="font">
-  <link rel="preload" href="fonts/roboto.woff2" as="font">
-  <link rel="preload" href="fonts/roboto.woff" as="font">
-  <link rel="preload" href="fonts/robotoCondensed.woff2" as="font">
-  <link rel="preload" href="fonts/robotoCondensed.woff" as="font">
-  <link rel="preload" href="fonts/robotoCondensedBold.woff2" as="font">
-  <link rel="preload" href="fonts/robotoCondensedBold.woff" as="font">
+  <link rel="preload" href="fonts/ptMono.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptMono.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensedBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensedBold.woff" as="font" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
@@ -54,7 +54,10 @@
       <h1 class="visually-hidden">Главная страница сайта</h1>
       <div class="intro">
         <!-- 1х: 705px; 2x: 1410px -->
-        <img src="img/bg-header-card@1x.png" width="705" height="515" srcset="img/bg-header-card@1x.png 1x, img/bg-header-card@2x.png 2x" alt="Изображение продукции">
+        <picture>
+          <source type="image/webp" srcset="img/bg-header-card@1x.webp 1x, img/bg-header-card@2x.webp 2x">
+          <img src="img/bg-header-card@1x.png" width="705" height="515" srcset="img/bg-header-card@1x.png 1x, img/bg-header-card@2x.png 2x" alt="Изображение продукции">
+        </picture>
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Основная продукция</h2>
           <div class="intro__product">
