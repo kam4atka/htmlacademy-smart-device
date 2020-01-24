@@ -72,6 +72,7 @@
         var modalClose = root.querySelector('.modal__close');
         var clickHandler = function (cEvt) {
           cEvt.preventDefault();
+          document.body.style.overflow = 'scroll';
           root.classList.add('modal_hide');
           overlay.classList.add('overlay_hide');
           modalClose.removeEventListener('click', clickHandler);
@@ -85,6 +86,7 @@
         var escHandler = function (escEvt) {
           if (escEvt.keyCode === 27) {
             escEvt.preventDefault();
+            document.body.style.overflow = 'scroll';
             if (!root.classList.contains('modal_hide')) {
               root.classList.add('modal_hide');
             }
@@ -102,6 +104,7 @@
       }
 
       if (modal) {
+        document.body.style.overflow = 'hidden';
         modal.classList.remove('modal_hide');
         setCloseEvent(modal);
         setCloseEsc(modal);

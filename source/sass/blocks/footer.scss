@@ -188,6 +188,27 @@
   text-overflow: ellipsis;
 }
 
+.footer__contact a {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: $color-text-default;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .footer__copyright {
   border-top: 1px solid $color-border;
 }
