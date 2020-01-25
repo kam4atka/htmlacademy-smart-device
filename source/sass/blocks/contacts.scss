@@ -97,6 +97,14 @@
   width: 47%;
   margin-bottom: 40px;
   padding: 15px 16px;
+
+  &_left {
+    margin-right: auto;
+  }
+
+  &_right {
+    margin-left: auto;
+  }
 }
 
 .contacts__form-textarea {
