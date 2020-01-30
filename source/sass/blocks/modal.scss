@@ -205,3 +205,12 @@
     border: 1px solid $color-text-white;
   }
 }
+
+.modal__form-block {
+  position: relative;
+}
+
+.modal__form-checkbox {
+  top: 100%;
+  left: 10px;
+}

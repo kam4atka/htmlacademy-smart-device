@@ -146,6 +146,9 @@
 }
 
 .contacts__checkbox {
+  top: 50%;
+  left: 10px;
+
   &:checked + .contacts__checkbox-label::after {
     content: "";
     position: absolute;
@@ -164,9 +167,17 @@
   }
 }
 
-.contacts__checkbox-label {
+.contacts__form-block {
   position: relative;
   width: 46%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__checkbox-label {
+  position: relative;
+  width: 100%;
   max-width: 270px;
   padding-left: 32px;
   overflow: hidden;
@@ -231,6 +242,10 @@
     padding: 12px 19px 19px 19px;
   }
 
+  .contacts__form-block {
+    padding: 3px 0 0 3px;
+  }
+
   .contacts__form-btn {
     width: 48%;
     max-width: 281px;
@@ -278,6 +293,17 @@
     width: 100%;
     max-width: 295px;
     margin-bottom: 31px;
+  }
+
+  .contacts__form-block {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .contacts__checkbox {
+    top: 50%;
+    left: 50%;
   }
 
   .contacts__checkbox-label {
